@@ -1,0 +1,10 @@
+.globalBox{
+    background-color: coral;
+    min-height: 300px;
+    color: firebrick;
+    display: flex;
+    justify-content: space-evenly;
+}
+img{
+    height: 200px;
+}
