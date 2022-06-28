@@ -1,14 +1,15 @@
-import Post from "../post/Post";
+export default function User({item,postLift}) {
 
-export default function User({item,chosenPost}) {
+    let onClick = () => {
+        postLift(item.id);
+
+    }
+
     return (
         <div>
-            <h2>{item.id} - {item.name}</h2>
-            <button onClick={() => {
-                <Post/>
+            {item.name}
+            <button onClick={onClick}>posts</button>
 
-            }}>Click
-            </button>
         </div>
     )
 }

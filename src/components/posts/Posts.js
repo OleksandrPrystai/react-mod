@@ -1,27 +1,6 @@
-import {useEffect, useState} from "react";
-import {getPosts} from "../../services";
-import Post from "../post/Post";
+export default function Posts({posts}) {
+    return (<div>
+        {posts.map(value => <div key={value.id}>{value.body}</div>)}
 
-
-export default function Posts() {
-
-    let [posts, setPosts] = useState([]);
-
-    useEffect(() => {
-        getPosts().then(value => setPosts([value]))
-    }, [])
-
-
-    return (
-        <div>
-            {
-                posts.map(value => <Post
-                    key={value.id}
-                    item={value}
-                />)
-
-            }
-
-        </div>
-    )
+    </div>);
 }

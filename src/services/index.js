@@ -1,4 +1,3 @@
-import {getUsers} from "./User.api.service";
-import {getPosts} from "./Post.api.service";
+import {getUsers,getPosts} from "./User.api.service";
 
 export {getUsers,getPosts}
