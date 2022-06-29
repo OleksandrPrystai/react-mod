@@ -1,25 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import UserAddPost from "./components/user.add.post/UserAddPost";
+import CommentAddPost from "./components/comment.add.post/CommentAddPost";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div>
+            <UserAddPost/>
+            <CommentAddPost/>
+
+        </div>
+    );
 }
 
 export default App;
